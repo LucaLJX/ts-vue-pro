@@ -1,0 +1,41 @@
+.home-container {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+
+  .sidebar-container {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2001;
+    overflow: hidden;
+
+    .sidebar-title {
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: 700;
+      background: #283445;
+      text-align: center;
+      color: #fff;
+    }
+
+    .sidebar-submenu {
+      transition: all 0.28s ease-out;
+      position: absolute;
+      top: 50px;
+      bottom: 0;
+      left: 0;
+      right: -17px;
+      overflow-y: scroll;
+      background: #283445;
+    }
+  }
+
+  .content-container {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+}
