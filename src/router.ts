@@ -27,18 +27,20 @@ export default new Router({
       children: [
         {
           path: '123',
+          name: '123',
           component: Home,
           meta: { // 附加数据
-            desc: '首页', // 描述 - 用于展示菜单名称
+            desc: '123', // 描述 - 用于展示菜单名称
             authority: '',
             icon: ''
           }
         },
         {
           path: '4123',
+          name: '4123',
           component: Home,
           meta: { // 附加数据
-            desc: '首页', // 描述 - 用于展示菜单名称
+            desc: '4123', // 描述 - 用于展示菜单名称
             authority: '', // 权限
             icon: '' // 图标
           }
