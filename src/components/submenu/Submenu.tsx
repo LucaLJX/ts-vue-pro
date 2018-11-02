@@ -63,7 +63,7 @@ class Submenu extends Vue {
                     {
                       childrenItem.meta.icon !== '' ? <i class={childrenItem.meta.icon}></i> : null
                     }
-                    <span slot='title'>{`${item.path}/${childrenItem.path}`}</span>
+                    <span slot='title'>{`${childrenItem.path}`}</span>
                   </el-menu-item>
                 </router-link>
               ))
