@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home/index'
+import ChartsPieDemo from './views/Demo/ChartsPieDemo'
 
 Vue.use(Router)
 
@@ -20,17 +21,17 @@ export default new Router({
       name: 'Home',
       component: Home,
       meta: { // 附加数据
-        desc: '首页', // 描述 - 用于展示菜单名称
+        desc: 'demo', // 描述 - 用于展示菜单名称
         authority: '',
         icon: 'el-icon-info'
       },
       children: [
         {
-          path: '123',
-          name: '123',
-          component: Home,
+          path: 'chartsPieDemo',
+          name: 'chartsPieDemo',
+          component: ChartsPieDemo,
           meta: { // 附加数据
-            desc: '123', // 描述 - 用于展示菜单名称
+            desc: '饼图示例', // 描述 - 用于展示菜单名称
             authority: '',
             icon: ''
           }

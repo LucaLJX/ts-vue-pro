@@ -7,7 +7,11 @@ import './registerServiceWorker'
 // 引入element-ui
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// 引入vue-echarts
+// @ts-ignore
+import ECharts from 'vue-echarts/dist/vue-echarts.js'
 
+Vue.component('v-chart', ECharts)
 Vue.use(ElementUI, { size: 'mini' })
 Vue.config.productionTip = false
 
