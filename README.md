@@ -24,11 +24,12 @@ typescript编写的基于vue的前端项目
 
 #### 2.实现图表组件
 
-  - echarts-vue的引入
+  - ~~echarts-vue的引入~~ (2018.11.14 finish)
   - AntV的引入
-  - 实现图表-table组件
+  - 实现图表-table组件 (2018.11.14 -- xxx)
+    - ~~echarts-pie + element-table~~ (2018.11.14 finish)
 
-#### 3.封装基于axios.js的http请求的封装
+#### 3.封装基于axios.js的http请求的公共工具
 
   - 动态header的配置
   - get、post、delete、put请求的拆分
@@ -38,6 +39,10 @@ typescript编写的基于vue的前端项目
 #### 4.对于TS类型声明demo的实现，规范代码
 
   - 以某一页面实现TS类型声明的demo作为代码示范
+
+#### 5.引入loadsh.js库，测试常用loadsh.js工具示例
+
+#### 6.利用promise实现dialog自动关闭
 
 ### 开发注意事项
 
@@ -58,4 +63,17 @@ typescript编写的基于vue的前端项目
     icon: 'el-icon-inf' // 图标 基于element-ui的icon库
   }
 }
+```
+
+#### 引入社区约定的ts校验规则(2018.11.14)
+
+```shell
+npm insgtall tslint-config-standard --save
+```
+
+tslint.json
+```javascript
+"extends": [
+  "tslint-config-standard"
+]
 ```
