@@ -28,7 +28,7 @@ class Submenu extends Vue {
 
   private check (item: any) {
     // 是否有子节点
-    return item.children && item.children!.length > 0
+    return item.children && item.children.length > 0
   }
 
   private renderNoChildren (item: any) {
